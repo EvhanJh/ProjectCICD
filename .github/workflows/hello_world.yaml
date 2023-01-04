@@ -1,0 +1,10 @@
+name: "Hello World Message"
+on:
+  push:
+jobs:
+  hello_world:
+      name: "Hello World"
+      steps:
+        - name: "Hello World"
+          run : |
+              echo "Hello World !"
