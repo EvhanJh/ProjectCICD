@@ -13,6 +13,13 @@ jobs:
   pylint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - run: pip install pylint
       - run: pylint ./main.py
+
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: pip install pytest
+      - run: pytest ./main.py
