@@ -14,4 +14,5 @@ jobs:
       name: "Check Linter"
       runs-on: ubuntu-latest
       steps:
-        - run: python --version
+        - run: pip install pylint  # -r requirements.txt
+        - run: pylint ./main.py
