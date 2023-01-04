@@ -15,4 +15,5 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - run: pip install pylint  # -r requirements.txt
-        - run: ls
+        - run: |
+            ls
