@@ -4,6 +4,7 @@ on:
 jobs:
   hello_world:
       name: "Hello World"
+      runs-on: ubuntu-latest
       steps:
         - name: "Hello World"
           run : |
