@@ -18,4 +18,4 @@ def test_answer():
     assert main(3, 2) == 2
 
 
-main(5, 2)
+main(1, 2)
