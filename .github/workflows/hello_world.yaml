@@ -2,7 +2,7 @@ name: "Hello World Message"
 on:
   push:
 jobs:
-  hello_world:
+  hello world:
       name: "Hello World"
       runs-on: ubuntu-latest
       steps:
@@ -14,5 +14,7 @@ jobs:
       name: "Check Linter"
       runs-on: ubuntu-latest
       steps:
+        - run: ls -l
+          run: find .
         - run: pip install pylint  # -r requirements.txt
         - run: pylint main.py
