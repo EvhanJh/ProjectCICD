@@ -16,5 +16,6 @@ jobs:
       steps:
         - run: ls -l
         - run: find .
+        - run: git status
         - run: pip install pylint  # -r requirements.txt
         - run: pylint main.py
