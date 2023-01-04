@@ -11,4 +11,8 @@ def main(elem_x, elem_y):
     return result_x + 1
 
 
+def test_answer():
+    assert main(3, 2) == 2
+
+
 main(5, 2)
